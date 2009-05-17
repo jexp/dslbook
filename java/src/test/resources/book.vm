@@ -1,0 +1,11 @@
+<ul>
+#foreach($person in $book.people)
+   <li>
+   #if( $person.link )
+   <a href = "$person.href">$person.fullName</a>
+   #else
+   $person.fullName
+   #end
+   </li>
+#end
+</ul>
